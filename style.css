@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Uncomment the below line if you want a global background */
+    /* background: linear-gradient(to bottom left, orange, rgb(255, 255, 255)); */
+} 
+
+.box {
+    height: 100vh; /* Make it fill the complete window */
+    background: linear-gradient(180deg, rgb(251, 178, 132), rgb(250, 216, 185)); /* Replace with the actual gradient colors */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align text to the top */
+    padding: 20px;
+    text-align: top;
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+}
+
+#nav {
+    height: 50px;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Aligns nav links to the left */
+    position: relative;
+}
+
+a {
+    color: aliceblue;
+    margin: 0 30px; /* More responsive spacing */
+    text-decoration: none;
+    font-size: 18px;
+    font-style: italic;
+    text-align: left; /* Align text to the left */
+}
+
+#name {
+    color: white;
+    font-weight: 300;
+    font-size: 28px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px; /* Optional: Add some margin if needed */
+}
+
+
