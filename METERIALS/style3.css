@@ -1,0 +1,19 @@
+.container {
+    position: relative; /* Required for absolute positioning */
+    width: 300px; /* Adjust as needed */
+  }
+  
+  .overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Adjust image size */
+    height: 100%;
+    z-index: 1; /* Ensures image stays above text */
+    opacity: 0.5; /* Optional: Make image semi-transparent */
+  }
+  
+  .text {
+    position: relative; /* Keeps text in normal flow */
+    z-index: 2; /* Higher than image's z-index to keep text on top */
+  }
