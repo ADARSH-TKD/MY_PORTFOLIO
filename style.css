@@ -45,17 +45,16 @@
 
 /* Image centered in the middle */
 .image {
-    width: 300px; /* Adjust width as needed */
-    height: auto;
-    display: block;
-    margin: 20px auto; /* Centers horizontally */
-    mix-blend-mode: multiply;
     position: absolute;
-    left: 45%;
-    top: 50%;
+    left: 50%;
+    top: 60%;
     transform: translate(-50%, -50%);
-    
+}
 
+.image img {
+    width: 350px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
 }
 
 /* Navigation Bar */
