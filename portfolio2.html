@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adarsh Nayak Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap');
+        @import url('https://fonts.cdnfonts.com/css/century-schoolbook');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navigation Bar */
+        #nav {
+            height: 50px;
+            background-color: black;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        #name {
+            color: white;
+            font-size: 28px;
+            margin-right: auto;
+        }
+
+        #nav a {
+            color: aliceblue;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-style: italic;
+        }
+
+        /* Main Content Container */
+        .box {
+            min-height: 100vh;
+            background: linear-gradient(180deg, rgb(251, 178, 132), rgb(250, 216, 185));
+            padding: 40px;
+            font-family: 'Century Schoolbook', serif;
+            display: flow-root;
+            position: relative;
+        }
+
+        /* Image Wrapper */
+        .image-wrapper {
+            width: 350px;
+            float: left;
+            shape-outside: url('adarsh2.png');
+            shape-margin: 20px;
+            margin: 0 50px 30px 0;
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Text Content */
+        .text-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .main-headings {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .bio-text {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+            margin-top: 30px;
+        }
+
+        .bio-text p {
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .image-wrapper {
+                float: none;
+                margin: 0 auto 30px;
+                width: 250px;
+            }
+
+            #nav {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            #name {
+                margin: 10px 0;
+                position: static;
+            }
+
+            #nav a {
+                margin: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <a id="name">Adarsh Nayak</a>
+            <a href="#">ABOUT ME</a>
+            <a href="#">SKILLS</a>
+            <a href="#">PROJECT</a>
+            <a href="#">ACHIEVEMENTS</a>
+            <a href="#">CONTACT</a>
+        </nav>
+    </header>
+
+    <main class="box">
+        <div class="text-content">
+            <div class="main-headings">
+                <h1>ARTIFICIAL INTELLIGENCE</h1>
+                <h1>MACHINE LEARNING</h1>
+            </div>
+
+            <div class="image-wrapper">
+                <img src="adarsh2.png" alt="Adarsh Nayak">
+            </div>
+
+            <div class="bio-text">
+                <p>Adarsh Nayak is a Computer Science undergraduate specializing in Artificial Intelligence & Machine Learning at C.V. Raman Global University. With a strong foundation in cloud computing, web development, and robotics, he is passionate about leveraging technology to solve real-world problems.</p>
+                
+                <p>His expertise spans multiple domains, including Python, C++, Java, JavaScript, and AI/ML frameworks, allowing him to build innovative and scalable solutions. Adarsh has actively participated in several national and international competitions, showcasing his leadership and technical skills.</p>
+
+                <p>He was a finalist in the Smart India Hackathon (SIH), where he developed an ML-based mobile app for Direct Market Access for Farmers. His passion for cloud technologies led him to become a Core Member for Cloud Management in GDG on Campus, contributing to cloud-related initiatives and workshops.</p>
+
+                <p>Adarsh has successfully completed a Summer Internship at Silicon University, where he worked extensively with Django and Python to build dynamic web applications. His participation in the Accenture Innovation Challenge Bootcamp demonstrated his problem-solving abilities and innovative thinking.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
